@@ -1,0 +1,197 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 430" width="900" height="430" font-family="Georgia, 'Times New Roman', serif">
+<rect width="900" height="430" fill="#fdfcfa"/>
+<text x="40" y="74" font-size="15" fill="#1c1b19">The unwrap</text>
+<text x="40" y="92" font-size="13" fill="#6b6862">quads squeezed together in UV</text>
+<clipPath id="c400"><rect x="40" y="104" width="34" height="88"/></clipPath>
+<g clip-path="url(#c400)">
+<rect x="40" y="104" width="34" height="88" fill="#eef1f5"/>
+<rect x="40.0" y="104" width="5.5" height="88" fill="#3f5e8d" opacity="0.22"/>
+<rect x="51.0" y="104" width="5.5" height="88" fill="#3f5e8d" opacity="0.22"/>
+<rect x="62.0" y="104" width="5.5" height="88" fill="#3f5e8d" opacity="0.22"/>
+<rect x="73.0" y="104" width="5.5" height="88" fill="#3f5e8d" opacity="0.22"/>
+<rect x="84.0" y="104" width="5.5" height="88" fill="#3f5e8d" opacity="0.22"/>
+</g>
+<clipPath id="c401"><rect x="74" y="104" width="34" height="88"/></clipPath>
+<g clip-path="url(#c401)">
+<rect x="74" y="104" width="34" height="88" fill="#eef1f5"/>
+<rect x="74.0" y="104" width="5.5" height="88" fill="#3f5e8d" opacity="0.22"/>
+<rect x="85.0" y="104" width="5.5" height="88" fill="#3f5e8d" opacity="0.22"/>
+<rect x="96.0" y="104" width="5.5" height="88" fill="#3f5e8d" opacity="0.22"/>
+<rect x="107.0" y="104" width="5.5" height="88" fill="#3f5e8d" opacity="0.22"/>
+<rect x="118.0" y="104" width="5.5" height="88" fill="#3f5e8d" opacity="0.22"/>
+</g>
+<clipPath id="c402"><rect x="108" y="104" width="34" height="88"/></clipPath>
+<g clip-path="url(#c402)">
+<rect x="108" y="104" width="34" height="88" fill="#eef1f5"/>
+<rect x="108.0" y="104" width="5.5" height="88" fill="#3f5e8d" opacity="0.22"/>
+<rect x="119.0" y="104" width="5.5" height="88" fill="#3f5e8d" opacity="0.22"/>
+<rect x="130.0" y="104" width="5.5" height="88" fill="#3f5e8d" opacity="0.22"/>
+<rect x="141.0" y="104" width="5.5" height="88" fill="#3f5e8d" opacity="0.22"/>
+<rect x="152.0" y="104" width="5.5" height="88" fill="#3f5e8d" opacity="0.22"/>
+</g>
+<clipPath id="c403"><rect x="142" y="104" width="14" height="88"/></clipPath>
+<g clip-path="url(#c403)">
+<rect x="142" y="104" width="14" height="88" fill="#f6efe4"/>
+<rect x="142.0" y="104" width="5.5" height="88" fill="#8a6a45" opacity="0.22"/>
+<rect x="153.0" y="104" width="5.5" height="88" fill="#8a6a45" opacity="0.22"/>
+<rect x="164.0" y="104" width="5.5" height="88" fill="#8a6a45" opacity="0.22"/>
+</g>
+<clipPath id="c404"><rect x="156" y="104" width="14" height="88"/></clipPath>
+<g clip-path="url(#c404)">
+<rect x="156" y="104" width="14" height="88" fill="#f6efe4"/>
+<rect x="156.0" y="104" width="5.5" height="88" fill="#8a6a45" opacity="0.22"/>
+<rect x="167.0" y="104" width="5.5" height="88" fill="#8a6a45" opacity="0.22"/>
+<rect x="178.0" y="104" width="5.5" height="88" fill="#8a6a45" opacity="0.22"/>
+</g>
+<clipPath id="c405"><rect x="170" y="104" width="14" height="88"/></clipPath>
+<g clip-path="url(#c405)">
+<rect x="170" y="104" width="14" height="88" fill="#f6efe4"/>
+<rect x="170.0" y="104" width="5.5" height="88" fill="#8a6a45" opacity="0.22"/>
+<rect x="181.0" y="104" width="5.5" height="88" fill="#8a6a45" opacity="0.22"/>
+<rect x="192.0" y="104" width="5.5" height="88" fill="#8a6a45" opacity="0.22"/>
+</g>
+<clipPath id="c406"><rect x="184" y="104" width="34" height="88"/></clipPath>
+<g clip-path="url(#c406)">
+<rect x="184" y="104" width="34" height="88" fill="#eef1f5"/>
+<rect x="184.0" y="104" width="5.5" height="88" fill="#3f5e8d" opacity="0.22"/>
+<rect x="195.0" y="104" width="5.5" height="88" fill="#3f5e8d" opacity="0.22"/>
+<rect x="206.0" y="104" width="5.5" height="88" fill="#3f5e8d" opacity="0.22"/>
+<rect x="217.0" y="104" width="5.5" height="88" fill="#3f5e8d" opacity="0.22"/>
+<rect x="228.0" y="104" width="5.5" height="88" fill="#3f5e8d" opacity="0.22"/>
+</g>
+<clipPath id="c407"><rect x="218" y="104" width="34" height="88"/></clipPath>
+<g clip-path="url(#c407)">
+<rect x="218" y="104" width="34" height="88" fill="#eef1f5"/>
+<rect x="218.0" y="104" width="5.5" height="88" fill="#3f5e8d" opacity="0.22"/>
+<rect x="229.0" y="104" width="5.5" height="88" fill="#3f5e8d" opacity="0.22"/>
+<rect x="240.0" y="104" width="5.5" height="88" fill="#3f5e8d" opacity="0.22"/>
+<rect x="251.0" y="104" width="5.5" height="88" fill="#3f5e8d" opacity="0.22"/>
+<rect x="262.0" y="104" width="5.5" height="88" fill="#3f5e8d" opacity="0.22"/>
+</g>
+<clipPath id="c408"><rect x="252" y="104" width="34" height="88"/></clipPath>
+<g clip-path="url(#c408)">
+<rect x="252" y="104" width="34" height="88" fill="#eef1f5"/>
+<rect x="252.0" y="104" width="5.5" height="88" fill="#3f5e8d" opacity="0.22"/>
+<rect x="263.0" y="104" width="5.5" height="88" fill="#3f5e8d" opacity="0.22"/>
+<rect x="274.0" y="104" width="5.5" height="88" fill="#3f5e8d" opacity="0.22"/>
+<rect x="285.0" y="104" width="5.5" height="88" fill="#3f5e8d" opacity="0.22"/>
+<rect x="296.0" y="104" width="5.5" height="88" fill="#3f5e8d" opacity="0.22"/>
+</g>
+<line x1="40" y1="104" x2="40" y2="192" stroke="#cdc8bf"/>
+<line x1="74" y1="104" x2="74" y2="192" stroke="#cdc8bf"/>
+<line x1="108" y1="104" x2="108" y2="192" stroke="#cdc8bf"/>
+<line x1="142" y1="104" x2="142" y2="192" stroke="#cdc8bf"/>
+<line x1="156" y1="104" x2="156" y2="192" stroke="#cdc8bf"/>
+<line x1="170" y1="104" x2="170" y2="192" stroke="#cdc8bf"/>
+<line x1="184" y1="104" x2="184" y2="192" stroke="#cdc8bf"/>
+<line x1="218" y1="104" x2="218" y2="192" stroke="#cdc8bf"/>
+<line x1="252" y1="104" x2="252" y2="192" stroke="#cdc8bf"/>
+<line x1="286" y1="104" x2="286" y2="192" stroke="#cdc8bf"/>
+<line x1="40" y1="104" x2="286" y2="104" stroke="#cdc8bf"/>
+<line x1="40" y1="126" x2="286" y2="126" stroke="#cdc8bf"/>
+<line x1="40" y1="148" x2="286" y2="148" stroke="#cdc8bf"/>
+<line x1="40" y1="170" x2="286" y2="170" stroke="#cdc8bf"/>
+<line x1="40" y1="192" x2="286" y2="192" stroke="#cdc8bf"/>
+<text x="520" y="74" font-size="15" fill="#1c1b19">Back on the ground</text>
+<text x="520" y="92" font-size="13" fill="#6b6862">same quads, even spacing</text>
+<clipPath id="c5200"><rect x="520" y="104" width="34" height="88"/></clipPath>
+<g clip-path="url(#c5200)">
+<rect x="520" y="104" width="34" height="88" fill="#eef1f5"/>
+<rect x="520.0" y="104" width="5.5" height="88" fill="#3f5e8d" opacity="0.22"/>
+<rect x="531.0" y="104" width="5.5" height="88" fill="#3f5e8d" opacity="0.22"/>
+<rect x="542.0" y="104" width="5.5" height="88" fill="#3f5e8d" opacity="0.22"/>
+<rect x="553.0" y="104" width="5.5" height="88" fill="#3f5e8d" opacity="0.22"/>
+<rect x="564.0" y="104" width="5.5" height="88" fill="#3f5e8d" opacity="0.22"/>
+</g>
+<clipPath id="c5201"><rect x="554" y="104" width="34" height="88"/></clipPath>
+<g clip-path="url(#c5201)">
+<rect x="554" y="104" width="34" height="88" fill="#eef1f5"/>
+<rect x="554.0" y="104" width="5.5" height="88" fill="#3f5e8d" opacity="0.22"/>
+<rect x="565.0" y="104" width="5.5" height="88" fill="#3f5e8d" opacity="0.22"/>
+<rect x="576.0" y="104" width="5.5" height="88" fill="#3f5e8d" opacity="0.22"/>
+<rect x="587.0" y="104" width="5.5" height="88" fill="#3f5e8d" opacity="0.22"/>
+<rect x="598.0" y="104" width="5.5" height="88" fill="#3f5e8d" opacity="0.22"/>
+</g>
+<clipPath id="c5202"><rect x="588" y="104" width="34" height="88"/></clipPath>
+<g clip-path="url(#c5202)">
+<rect x="588" y="104" width="34" height="88" fill="#eef1f5"/>
+<rect x="588.0" y="104" width="5.5" height="88" fill="#3f5e8d" opacity="0.22"/>
+<rect x="599.0" y="104" width="5.5" height="88" fill="#3f5e8d" opacity="0.22"/>
+<rect x="610.0" y="104" width="5.5" height="88" fill="#3f5e8d" opacity="0.22"/>
+<rect x="621.0" y="104" width="5.5" height="88" fill="#3f5e8d" opacity="0.22"/>
+<rect x="632.0" y="104" width="5.5" height="88" fill="#3f5e8d" opacity="0.22"/>
+</g>
+<clipPath id="c5203"><rect x="622" y="104" width="34" height="88"/></clipPath>
+<g clip-path="url(#c5203)">
+<rect x="622" y="104" width="34" height="88" fill="#f6efe4"/>
+<rect x="622.0" y="104" width="13.4" height="88" fill="#8a6a45" opacity="0.22"/>
+<rect x="648.7" y="104" width="13.4" height="88" fill="#8a6a45" opacity="0.22"/>
+<rect x="675.4" y="104" width="13.4" height="88" fill="#8a6a45" opacity="0.22"/>
+</g>
+<clipPath id="c5204"><rect x="656" y="104" width="34" height="88"/></clipPath>
+<g clip-path="url(#c5204)">
+<rect x="656" y="104" width="34" height="88" fill="#f6efe4"/>
+<rect x="656.0" y="104" width="13.4" height="88" fill="#8a6a45" opacity="0.22"/>
+<rect x="682.7" y="104" width="13.4" height="88" fill="#8a6a45" opacity="0.22"/>
+<rect x="709.4" y="104" width="13.4" height="88" fill="#8a6a45" opacity="0.22"/>
+</g>
+<clipPath id="c5205"><rect x="690" y="104" width="34" height="88"/></clipPath>
+<g clip-path="url(#c5205)">
+<rect x="690" y="104" width="34" height="88" fill="#f6efe4"/>
+<rect x="690.0" y="104" width="13.4" height="88" fill="#8a6a45" opacity="0.22"/>
+<rect x="716.7" y="104" width="13.4" height="88" fill="#8a6a45" opacity="0.22"/>
+<rect x="743.4" y="104" width="13.4" height="88" fill="#8a6a45" opacity="0.22"/>
+</g>
+<clipPath id="c5206"><rect x="724" y="104" width="34" height="88"/></clipPath>
+<g clip-path="url(#c5206)">
+<rect x="724" y="104" width="34" height="88" fill="#eef1f5"/>
+<rect x="724.0" y="104" width="5.5" height="88" fill="#3f5e8d" opacity="0.22"/>
+<rect x="735.0" y="104" width="5.5" height="88" fill="#3f5e8d" opacity="0.22"/>
+<rect x="746.0" y="104" width="5.5" height="88" fill="#3f5e8d" opacity="0.22"/>
+<rect x="757.0" y="104" width="5.5" height="88" fill="#3f5e8d" opacity="0.22"/>
+<rect x="768.0" y="104" width="5.5" height="88" fill="#3f5e8d" opacity="0.22"/>
+</g>
+<clipPath id="c5207"><rect x="758" y="104" width="34" height="88"/></clipPath>
+<g clip-path="url(#c5207)">
+<rect x="758" y="104" width="34" height="88" fill="#eef1f5"/>
+<rect x="758.0" y="104" width="5.5" height="88" fill="#3f5e8d" opacity="0.22"/>
+<rect x="769.0" y="104" width="5.5" height="88" fill="#3f5e8d" opacity="0.22"/>
+<rect x="780.0" y="104" width="5.5" height="88" fill="#3f5e8d" opacity="0.22"/>
+<rect x="791.0" y="104" width="5.5" height="88" fill="#3f5e8d" opacity="0.22"/>
+<rect x="802.0" y="104" width="5.5" height="88" fill="#3f5e8d" opacity="0.22"/>
+</g>
+<clipPath id="c5208"><rect x="792" y="104" width="34" height="88"/></clipPath>
+<g clip-path="url(#c5208)">
+<rect x="792" y="104" width="34" height="88" fill="#eef1f5"/>
+<rect x="792.0" y="104" width="5.5" height="88" fill="#3f5e8d" opacity="0.22"/>
+<rect x="803.0" y="104" width="5.5" height="88" fill="#3f5e8d" opacity="0.22"/>
+<rect x="814.0" y="104" width="5.5" height="88" fill="#3f5e8d" opacity="0.22"/>
+<rect x="825.0" y="104" width="5.5" height="88" fill="#3f5e8d" opacity="0.22"/>
+<rect x="836.0" y="104" width="5.5" height="88" fill="#3f5e8d" opacity="0.22"/>
+</g>
+<line x1="520" y1="104" x2="520" y2="192" stroke="#cdc8bf"/>
+<line x1="554" y1="104" x2="554" y2="192" stroke="#cdc8bf"/>
+<line x1="588" y1="104" x2="588" y2="192" stroke="#cdc8bf"/>
+<line x1="622" y1="104" x2="622" y2="192" stroke="#cdc8bf"/>
+<line x1="656" y1="104" x2="656" y2="192" stroke="#cdc8bf"/>
+<line x1="690" y1="104" x2="690" y2="192" stroke="#cdc8bf"/>
+<line x1="724" y1="104" x2="724" y2="192" stroke="#cdc8bf"/>
+<line x1="758" y1="104" x2="758" y2="192" stroke="#cdc8bf"/>
+<line x1="792" y1="104" x2="792" y2="192" stroke="#cdc8bf"/>
+<line x1="826" y1="104" x2="826" y2="192" stroke="#cdc8bf"/>
+<line x1="520" y1="104" x2="826" y2="104" stroke="#cdc8bf"/>
+<line x1="520" y1="126" x2="826" y2="126" stroke="#cdc8bf"/>
+<line x1="520" y1="148" x2="826" y2="148" stroke="#cdc8bf"/>
+<line x1="520" y1="170" x2="826" y2="170" stroke="#cdc8bf"/>
+<line x1="520" y1="192" x2="826" y2="192" stroke="#cdc8bf"/>
+<text x="163.0" y="210" text-anchor="middle" font-size="12" fill="#8a6a45">less UV</text>
+<text x="673.0" y="210" text-anchor="middle" font-size="12" fill="#8a6a45">same distance</text>
+<path d="M142 218 C 202 248, 562 248, 622 218" fill="none" stroke="#8a6a45" stroke-width="1.2" stroke-dasharray="4 3"/>
+<path d="M184 218 C 244 248, 664 248, 724 218" fill="none" stroke="#8a6a45" stroke-width="1.2" stroke-dasharray="4 3"/>
+<rect x="40" y="280" width="820" height="118" rx="4" fill="#ffffff" stroke="#cdc8bf"/>
+<rect x="40" y="280" width="4" height="118" fill="#8a6a45"/>
+<text x="62" y="310" font-size="14" fill="#1c1b19">The simulation is fixed in UV and scrolls there at a constant rate. Squeeze a stretch of mesh into less</text>
+<text x="62" y="332" font-size="14" fill="#1c1b19">UV and each quad covers fewer periods of it, so back on the ground the pattern is stretched out and</text>
+<text x="62" y="354" font-size="14" fill="#1c1b19">sweeps past faster. Give that stretch more UV instead and the water slows down.</text>
+<text x="62" y="384" font-size="13" fill="#6b6862">Acceleration is decided by the unwrap, not by the simulation.</text>
+</svg>

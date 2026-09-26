@@ -1,0 +1,115 @@
+---
+layout: default
+title: Publications & Talks
+description: "Publications and talks by Anis Benyoub, who builds renderers at Genesis AI (previously Intel GPU Research and Unity HDRP): papers at SIGGRAPH and HPG, talks at GDC, SIGGRAPH Advances in Real-Time Rendering and Digital Dragons."
+permalink: /publications/
+---
+<h1>Publications &amp; Talks</h1>
+<p class="muted">{{ site.description }} Newest first.</p>
+
+<h2>Papers</h2>
+<ul class="pubs">
+{%- for p in site.data.publications.papers %}
+  <li id="{{ p.title | slugify }}"{% if p.image %} class="with-thumb"{% endif %}>
+    {%- if p.image %}<a href="{{ p.links.paper }}"><img class="thumb" src="{{ p.image | relative_url }}" alt="{{ p.image_alt | escape }}" width="160" height="120" loading="lazy"></a>{% endif %}
+    <div><strong>{{ p.title }}</strong><br>
+    {{ p.authors }}<br>
+    {{ p.venue }}, {{ p.year }}.{% if p.award %} {{ p.award }}.{% endif %}<br>
+    <span class="links">
+      {%- if p.links.paper %}<a href="{{ p.links.paper }}">Paper</a>{% endif %}
+      {%- if p.links.pdf %}<a href="{{ p.links.pdf }}">PDF</a>{% endif %}
+      {%- if p.links.doi %}<a href="{{ p.links.doi }}">DOI</a>{% endif %}
+      {%- if p.links.code %}<a href="{{ p.links.code }}">Code</a>{% endif %}
+      {%- if p.links.video %}<a href="{{ p.links.video }}">{{ p.video_label | default: "Video" }}</a>{% endif %}
+      {%- if p.links.video2 %}<a href="{{ p.links.video2 }}">{{ p.video2_label | default: "Video 2" }}</a>{% endif %}
+      {%- if p.links.slides %}<a href="{{ p.links.slides }}">Slides</a>{% endif %}
+    </span></div>
+  </li>
+{%- endfor %}
+</ul>
+
+<h2>Talks</h2>
+<ul class="pubs">
+{%- for t in site.data.publications.talks %}
+  <li id="{{ t.title | slugify }}">
+    <strong>{{ t.title }}</strong><br>
+    {{ t.speakers }}<br>
+    {{ t.event }}, {{ t.date | date: "%B %-d, %Y" }}.{% if t.note %} {{ t.note }}{% endif %}<br>
+    <span class="links">
+      {%- if t.links.video %}<a href="{{ t.links.video }}">{{ t.video_label | default: "Video" }}</a>{% endif %}
+      {%- if t.links.slides %}<a href="{{ t.links.slides | relative_url }}">{{ t.slides_label | default: "Slides" }}</a>{% endif %}
+      {%- if t.links.course %}<a href="{{ t.links.course }}">Course page</a>{% endif %}
+      {%- if t.links.code %}<a href="{{ t.links.code }}">Code</a>{% endif %}
+      {%- if t.links.announcement %}<a href="{{ t.links.announcement }}">Announcement</a>{% endif %}
+      {%- if t.links.qa %}<a href="{{ t.links.qa }}">Q&amp;A</a>{% endif %}
+      {%- if t.links.post %}<a href="{{ t.links.post | relative_url }}">Blog post</a>{% endif %}
+    </span>
+  </li>
+{%- endfor %}
+</ul>
+
+<h2>Articles</h2>
+<ul class="pubs">
+{%- for a in site.data.publications.articles %}
+  <li><strong>{{ a.title }}</strong><br>{{ a.authors }}<br>{{ a.venue }}, {{ a.date | date: "%B %-d, %Y" }}.<br>
+    <span class="links"><a href="{{ a.links.article }}">{{ a.article_label | default: "Article" }}</a></span></li>
+{%- endfor %}
+</ul>
+
+<h2>Software</h2>
+<ul class="pubs">
+{%- for s in site.data.publications.software %}
+  <li{% if s.image %} class="with-thumb"{% endif %}>{% if s.image %}{% assign s_href = s.links.code | default: s.links.docs %}{% if s_href %}<a href="{{ s_href }}">{% endif %}<img class="thumb" src="{{ s.image | relative_url }}" alt="{{ s.image_alt | escape }}" width="160" height="120" loading="lazy">{% if s_href %}</a>{% endif %}{% endif %}<div><strong>{{ s.title }}</strong> ({{ s.year }}). {{ s.description }}<br>
+    <span class="links">
+      {%- if s.links.code %}<a href="{{ s.links.code }}">Code</a>{% endif %}
+      {%- for pk in s.packages %}<a href="{{ pk.url }}">PyPI: {{ pk.label }}</a>{% endfor %}
+      {%- if s.links.docs %}<a href="{{ s.links.docs }}">Documentation</a>{% endif %}
+      {%- if s.links.genesis %}<a href="{{ s.links.genesis }}">Genesis World</a>{% endif %}
+      {%- if s.links.video %}<a href="{{ s.links.video }}">Video</a>{% endif %}
+    </span>{% if s.materials %}<div class="materials"><span class="muted">Materials:</span> {% for m in s.materials %}<a href="{{ m.url }}">{{ m.label }}</a>{% endfor %}</div>{% endif %}</div></li>
+{%- endfor %}
+</ul>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+{%- for p in site.data.publications.papers %}
+    {
+      "@type": {% if p.type == "thesis" %}"Thesis"{% else %}"ScholarlyArticle"{% endif %},
+      "headline": {{ p.title | jsonify }},
+      "name": {{ p.title | jsonify }},
+      "author": [
+        {%- assign names = p.authors | replace: " (* equal contribution)", "" | replace: "*", "" | replace: " (supervisor: Benoît Ozell)", "" | split: ", " %}
+        {%- for n in names %}
+        { "@type": "Person", "name": {{ n | jsonify }}{% if n == "Anis Benyoub" %}, "@id": "{{ site.url }}/#person"{% endif %} }{% unless forloop.last %},{% endunless %}
+        {%- endfor %}
+      ],
+      "datePublished": "{{ p.date }}",
+      "publisher": { "@type": "Organization", "name": {{ p.venue | jsonify }} },
+      {%- if p.doi %}
+      "sameAs": "https://doi.org/{{ p.doi }}",
+      "identifier": "doi:{{ p.doi }}",
+      {%- endif %}
+      "url": {{ p.links.paper | jsonify }},
+      "keywords": {{ p.keywords | join: ", " | jsonify }}
+    },
+{%- endfor %}
+{%- for t in site.data.publications.talks %}
+    {
+      "@type": "PresentationDigitalDocument",
+      "name": {{ t.title | jsonify }},
+      "author": { "@type": "Person", "name": "Anis Benyoub", "@id": "{{ site.url }}/#person" },
+      "contributor": {{ t.speakers | jsonify }},
+      "datePublished": "{{ t.date }}",
+      {%- if t.links.slides %}
+      "url": {{ t.links.slides | absolute_url | jsonify }},
+      {%- elsif t.links.video %}
+      "url": {{ t.links.video | jsonify }},
+      {%- endif %}
+      "publisher": { "@type": "Event", "name": {{ t.event | jsonify }}, "startDate": "{{ t.date }}" }
+    }{% unless forloop.last %},{% endunless %}
+{%- endfor %}
+  ]
+}
+</script>

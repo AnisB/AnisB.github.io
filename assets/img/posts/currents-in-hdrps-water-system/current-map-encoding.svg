@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 380" width="900" height="380" font-family="Georgia, 'Times New Roman', serif">
+  <rect width="900" height="380" fill="#fdfcfa"/>
+
+  <text x="40" y="44" font-size="16" fill="#6b6862">A current map is an ordinary texture. Three channels, two jobs.</text>
+
+  <!-- ===== the texture ===== -->
+  <rect x="40" y="76" width="200" height="200" rx="3" fill="#ffffff" stroke="#cdc8bf"/>
+  <!-- a suggestion of a painted river bend -->
+  <path d="M40 220 C 110 220, 120 140, 200 120 L 240 112 L 240 168 L 210 176 C 150 190, 140 250, 110 276 L 40 276 Z"
+        fill="#e8eaef" stroke="none"/>
+  <g stroke="#3f5e8d" stroke-width="1.6" fill="none" opacity="0.85">
+    <path d="M62 258 C 110 240, 118 176, 176 152"/>
+    <path d="M78 268 C 130 250, 136 190, 196 166"/>
+  </g>
+  <polygon points="176,152 166,158 170,146" fill="#3f5e8d"/>
+  <polygon points="196,166 186,172 190,160" fill="#3f5e8d"/>
+  <text x="140" y="298" text-anchor="middle" font-size="13" fill="#6b6862">painted in any image editor</text>
+  <text x="140" y="316" text-anchor="middle" font-size="13" fill="#6b6862">(sRGB off)</text>
+
+  <!-- ===== channel breakdown ===== -->
+  <!-- R -->
+  <rect x="300" y="76" width="34" height="34" rx="3" fill="#c0504d"/>
+  <text x="317" y="100" text-anchor="middle" font-size="17" fill="#ffffff" font-family="monospace">R</text>
+  <rect x="340" y="76" width="34" height="34" rx="3" fill="#4f8a4f"/>
+  <text x="357" y="100" text-anchor="middle" font-size="17" fill="#ffffff" font-family="monospace">G</text>
+  <text x="392" y="99" font-size="17" fill="#1c1b19">direction of flow</text>
+  <text x="392" y="121" font-size="14" fill="#6b6862">a 2D vector, remapped from [0,1] to [-1,1]</text>
+
+  <!-- B -->
+  <rect x="300" y="156" width="34" height="34" rx="3" fill="#3f5e8d"/>
+  <text x="317" y="180" text-anchor="middle" font-size="17" fill="#ffffff" font-family="monospace">B</text>
+  <text x="392" y="179" font-size="17" fill="#1c1b19">influence</text>
+  <text x="392" y="201" font-size="14" fill="#6b6862">how hard this pixel overrides the surface's base flow</text>
+
+  <!-- neutral -->
+  <rect x="300" y="238" width="540" height="86" rx="4" fill="#ffffff" stroke="#8a6a45" stroke-width="1.5"/>
+  <rect x="300" y="238" width="4" height="86" fill="#8a6a45"/>
+  <text x="322" y="266" font-size="15" fill="#8a6a45">The neutral value is <tspan font-family="monospace" fill="#1c1b19">(1, 0.5, 1)</tspan>, not black.</text>
+  <text x="322" y="290" font-size="14" fill="#6b6862">Start from a flat fill and paint deviations into it. Anywhere you have</text>
+  <text x="322" y="310" font-size="14" fill="#6b6862">not painted keeps flowing the way the rest of the surface flows.</text>
+</svg>

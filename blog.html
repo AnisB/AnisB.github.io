@@ -1,0 +1,13 @@
+---
+layout: default
+title: Blog
+description: "Blog of Anis Benyoub, who builds renderers at Genesis AI (previously Intel GPU Research and Unity HDRP): real-time rendering, sampling, ray tracing and GPU performance."
+permalink: /blog/
+---
+<h1>Blog</h1>
+<p class="muted">{{ site.description }} Posts migrated from <a href="https://auzaiffe.wordpress.com">auzaiffe.wordpress.com</a>.</p>
+<ul class="posts plain">
+{%- for post in site.posts %}
+  <li><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y-%m-%d" }}</time> <a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
+{%- endfor %}
+</ul>

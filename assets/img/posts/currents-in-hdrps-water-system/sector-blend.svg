@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 400" width="900" height="400" font-family="Georgia, 'Times New Roman', serif">
+  <rect width="900" height="400" fill="#fdfcfa"/>
+
+  <!-- ===== left: the eight sectors ===== -->
+  <text x="200" y="34" text-anchor="middle" font-size="15" fill="#6b6862">The eight directions where the result is exact</text>
+  <g transform="translate(200,210)">
+    <!-- sector wedges -->
+    <g stroke="#e3dfd8" stroke-width="1" fill="none">
+      <circle cx="0" cy="0" r="128"/>
+      <circle cx="0" cy="0" r="86" stroke="#efece6"/>
+    </g>
+    <!-- the 8 basis directions -->
+    <g stroke="#cdc8bf" stroke-width="1.5">
+      <line x1="0" y1="0" x2="128" y2="0"/>
+      <line x1="0" y1="0" x2="90.5" y2="-90.5"/>
+      <line x1="0" y1="0" x2="0" y2="-128"/>
+      <line x1="0" y1="0" x2="-90.5" y2="-90.5"/>
+      <line x1="0" y1="0" x2="-128" y2="0"/>
+      <line x1="0" y1="0" x2="-90.5" y2="90.5"/>
+      <line x1="0" y1="0" x2="0" y2="128"/>
+      <line x1="0" y1="0" x2="90.5" y2="90.5"/>
+    </g>
+    <!-- the two bounding directions for our sample, highlighted -->
+    <line x1="0" y1="0" x2="128" y2="0" stroke="#3f5e8d" stroke-width="3"/>
+    <line x1="0" y1="0" x2="90.5" y2="-90.5" stroke="#3f5e8d" stroke-width="3"/>
+    <!-- the actual current direction, between them -->
+    <line x1="0" y1="0" x2="113" y2="-60" stroke="#8a6a45" stroke-width="3"/>
+    <polygon points="113,-60 100,-58 106,-48" fill="#8a6a45"/>
+    <!-- arc showing the fraction -->
+    <path d="M 60 0 A 60 60 0 0 0 42.4 -42.4" fill="none" stroke="#8a6a45" stroke-width="1.5" stroke-dasharray="3 3"/>
+    <text x="74" y="-26" font-size="14" fill="#8a6a45" font-style="italic">p</text>
+
+    <text x="138" y="5" font-size="13" fill="#3f5e8d" font-family="monospace">(1, 0)</text>
+    <text x="86" y="-100" font-size="13" fill="#3f5e8d" font-family="monospace">(1,1)/√2</text>
+    <circle cx="0" cy="0" r="3" fill="#1c1b19"/>
+  </g>
+  <text x="200" y="378" text-anchor="middle" font-size="13" fill="#6b6862">
+    the current (warm) falls between two basis directions (blue)
+  </text>
+
+  <!-- ===== right: the two taps ===== -->
+  <text x="620" y="34" text-anchor="middle" font-size="15" fill="#6b6862">So the simulation is sampled twice and blended</text>
+
+  <!-- tap 1 -->
+  <rect x="420" y="70" width="180" height="70" rx="4" fill="#ffffff" stroke="#3f5e8d" stroke-width="1.5"/>
+  <text x="510" y="97" text-anchor="middle" font-size="14" fill="#1c1b19" font-family="monospace">tap along (1, 0)</text>
+  <text x="510" y="122" text-anchor="middle" font-size="14" fill="#3f5e8d" font-family="monospace">weight 1 - p</text>
+
+  <!-- tap 2 -->
+  <rect x="420" y="168" width="180" height="70" rx="4" fill="#ffffff" stroke="#3f5e8d" stroke-width="1.5"/>
+  <text x="510" y="195" text-anchor="middle" font-size="14" fill="#1c1b19" font-family="monospace">tap along (1,1)/√2</text>
+  <text x="510" y="220" text-anchor="middle" font-size="14" fill="#3f5e8d" font-family="monospace">weight p</text>
+
+  <g stroke="#cdc8bf" stroke-width="1.5" fill="none">
+    <path d="M600 105 C 650 105, 650 168, 700 168"/>
+    <path d="M600 203 C 650 203, 650 168, 700 168"/>
+  </g>
+
+  <rect x="702" y="132" width="172" height="72" rx="4" fill="#ffffff" stroke="#8a6a45" stroke-width="2"/>
+  <text x="788" y="160" text-anchor="middle" font-size="14" fill="#1c1b19">continuous flow</text>
+  <text x="788" y="184" text-anchor="middle" font-size="14" fill="#1c1b19">in any direction</text>
+
+  <text x="620" y="288" text-anchor="middle" font-size="13" fill="#6b6862">Cost: two simulation taps instead of one, per evaluation.</text>
+  <text x="620" y="310" text-anchor="middle" font-size="13" fill="#6b6862">Each tap is a rigid rotation of the same field.</text>
+</svg>
