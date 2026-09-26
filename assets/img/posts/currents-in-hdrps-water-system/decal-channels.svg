@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 460" width="900" height="460" font-family="Georgia, 'Times New Roman', serif">
+  <rect width="900" height="460" fill="#fdfcfa"/>
+
+  <!-- source -->
+  <rect x="24" y="170" width="190" height="112" rx="4" fill="#ffffff" stroke="#3f5e8d" stroke-width="2"/>
+  <text x="119" y="207" text-anchor="middle" font-size="17" fill="#1c1b19">Water Decal</text>
+  <text x="119" y="231" text-anchor="middle" font-size="13" fill="#6b6862">one Shader Graph,</text>
+  <text x="119" y="249" text-anchor="middle" font-size="13" fill="#6b6862">projected in world space</text>
+
+  <!-- fan-out lines -->
+  <g stroke="#cdc8bf" stroke-width="1.5" fill="none">
+    <path d="M214 226 C 270 226, 270 92, 326 92"/>
+    <path d="M214 226 C 270 226, 270 190, 326 190"/>
+    <path d="M214 226 C 270 226, 270 288, 326 288"/>
+    <path d="M214 226 C 270 226, 270 386, 326 386"/>
+  </g>
+
+  <!-- group: deformation -->
+  <rect x="326" y="50" width="286" height="84" rx="4" fill="#ffffff" stroke="#cdc8bf"/>
+  <rect x="326" y="50" width="4" height="84" fill="#8a6a45"/>
+  <text x="346" y="76" font-size="13" fill="#8a6a45" font-family="monospace">DEFORMATION</text>
+  <text x="346" y="99" font-size="14" fill="#1c1b19" font-family="monospace">Deformation</text>
+  <text x="346" y="120" font-size="14" fill="#1c1b19" font-family="monospace">HorizontalDeformation</text>
+
+  <!-- group: foam -->
+  <rect x="326" y="148" width="286" height="84" rx="4" fill="#ffffff" stroke="#cdc8bf"/>
+  <rect x="326" y="148" width="4" height="84" fill="#8a6a45"/>
+  <text x="346" y="174" font-size="13" fill="#8a6a45" font-family="monospace">FOAM</text>
+  <text x="346" y="197" font-size="14" fill="#1c1b19" font-family="monospace">SurfaceFoam</text>
+  <text x="346" y="218" font-size="14" fill="#1c1b19" font-family="monospace">DeepFoam</text>
+
+  <!-- group: mask -->
+  <rect x="326" y="246" width="286" height="84" rx="4" fill="#ffffff" stroke="#cdc8bf"/>
+  <rect x="326" y="246" width="4" height="84" fill="#8a6a45"/>
+  <text x="346" y="272" font-size="13" fill="#8a6a45" font-family="monospace">MASK</text>
+  <text x="346" y="295" font-size="14" fill="#1c1b19" font-family="monospace">SimulationMask</text>
+  <text x="346" y="316" font-size="14" fill="#1c1b19" font-family="monospace">SimulationFoamMask</text>
+
+  <!-- group: current, highlighted -->
+  <rect x="326" y="344" width="286" height="84" rx="4" fill="#ffffff" stroke="#3f5e8d" stroke-width="2"/>
+  <rect x="326" y="344" width="4" height="84" fill="#3f5e8d"/>
+  <text x="346" y="370" font-size="13" fill="#3f5e8d" font-family="monospace">CURRENT</text>
+  <text x="346" y="393" font-size="14" fill="#1c1b19" font-family="monospace">LargeCurrent  + Influence</text>
+  <text x="346" y="414" font-size="14" fill="#1c1b19" font-family="monospace">RipplesCurrent + Influence</text>
+
+  <!-- converge -->
+  <g stroke="#cdc8bf" stroke-width="1.5" fill="none">
+    <path d="M612 92  C 668 92,  668 226, 724 226"/>
+    <path d="M612 190 C 668 190, 668 226, 724 226"/>
+    <path d="M612 288 C 668 288, 668 226, 724 226"/>
+    <path d="M612 386 C 668 386, 668 226, 724 226"/>
+  </g>
+  <path d="M716 226 l 10 0" stroke="#cdc8bf" stroke-width="1.5"/>
+
+  <!-- target -->
+  <rect x="726" y="170" width="150" height="112" rx="4" fill="#ffffff" stroke="#3f5e8d" stroke-width="2"/>
+  <text x="801" y="214" text-anchor="middle" font-size="17" fill="#1c1b19">Water surface</text>
+  <text x="801" y="240" text-anchor="middle" font-size="13" fill="#6b6862">same frame,</text>
+  <text x="801" y="258" text-anchor="middle" font-size="13" fill="#6b6862">same region</text>
+</svg>
