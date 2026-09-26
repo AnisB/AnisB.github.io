@@ -1,0 +1,268 @@
+# Publications and talks of Anis Benyoub. Newest first within each list.
+# Every entry here was confirmed against a primary source (see _notes/research-report.md).
+
+papers:
+  - title: "Adaptive Tetrahedral Grids for Volumetric Path-Tracing"
+    authors: "Anis Benyoub, Jonathan Dupuy"
+    venue: "SIGGRAPH 2025 Talks (Proceedings of SIGGRAPH Talks '25), ACM"
+    venue_short: "SIGGRAPH Talks 2025"
+    event: "SIGGRAPH 2025, Vancouver"
+    year: 2025
+    date: "2025-08-10"
+    doi: "10.1145/3721239.3734093"
+    links:
+      paper: "https://arxiv.org/abs/2506.11510"
+      doi: "https://doi.org/10.1145/3721239.3734093"
+      code: "https://github.com/AnisB/leb3D"
+      video: "https://youtu.be/fn4bfZwLusk"
+      video2: "https://youtu.be/o_96kNy_m1M"
+    video_label: "Supplemental video 1"
+    video2_label: "Supplemental video 2"
+    image: /assets/img/work/leb3d.jpg
+    image_alt: "Cloud rendered with volumetric path tracing on an adaptive tetrahedral grid"
+    keywords: ["volumetric path tracing", "adaptive grids", "longest edge bisection", "tetrahedral meshes"]
+
+  - title: "Hardware Accelerated Neural Block Texture Compression with Cooperative Vectors"
+    authors: "Laurent Belcour*, Anis Benyoub* (* equal contribution)"
+    venue: "High-Performance Graphics 2025, Symposium Papers, Eurographics Association"
+    venue_short: "HPG 2025"
+    event: "HPG 2025, Copenhagen"
+    year: 2025
+    date: "2025-06-25"
+    doi: "10.2312/hpg.20251173"
+    award: "Third place, Wolfgang Straßer Best Paper Award, HPG 2025"
+    links:
+      paper: "https://arxiv.org/abs/2506.06040"
+      doi: "https://doi.org/10.2312/hpg.20251173"
+      code: "https://github.com/GameTechDev/TextureSetNeuralCompressionSample"
+      video: "https://www.youtube.com/watch?v=WIa6BwzMW6M"
+    video_label: "Talk recording"
+    image: /assets/img/work/nbfc.jpg
+    image_alt: "Scene rendered with neural block-compressed texture sets: a brass robot next to a beehive"
+    keywords: ["neural texture compression", "cooperative vectors", "GPU inference", "block compression"]
+
+  - title: "Concurrent Binary Trees for Large-Scale Game Components"
+    authors: "Anis Benyoub, Jonathan Dupuy"
+    venue: "Proceedings of the ACM on Computer Graphics and Interactive Techniques, Vol. 7, No. 3 (High-Performance Graphics 2024)"
+    venue_short: "HPG 2024"
+    event: "HPG 2024, Denver"
+    year: 2024
+    date: "2024-07-26"
+    doi: "10.1145/3675371"
+    links:
+      paper: "https://arxiv.org/abs/2407.02215"
+      doi: "https://doi.org/10.1145/3675371"
+      code: "https://github.com/AnisB/large_cbt"
+      video: "https://www.youtube.com/watch?v=-Ce-XC4MtWk"
+      video2: "https://www.youtube.com/watch?v=LLMZCL_V4oU"
+    video_label: "Talk recording"
+    video2_label: "Demo video"
+    image: /assets/img/work/cbt.jpg
+    image_alt: "Planet-scale ocean tessellated with concurrent binary trees, with a moon on the horizon"
+    keywords: ["concurrent binary trees", "adaptive tessellation", "large-scale terrain", "GPU geometry"]
+
+  - title: "Sampling Visible GGX Normals with Spherical Caps"
+    authors: "Jonathan Dupuy, Anis Benyoub"
+    venue: "Computer Graphics Forum, Vol. 42, No. 8 (High-Performance Graphics 2023)"
+    venue_short: "HPG 2023"
+    event: "HPG 2023, Delft"
+    year: 2023
+    date: "2023-06-27"
+    doi: "10.1111/cgf.14867"
+    award: "Second place, Wolfgang Straßer Best Paper Award, HPG 2023"
+    links:
+      paper: "https://arxiv.org/abs/2306.05044"
+      doi: "https://doi.org/10.1111/cgf.14867"
+      code: "https://gist.github.com/jdupuy/4c6e782b62c92b9cb3d13fbb0a5bd7a0"
+      video: "https://youtu.be/u7TafvTVmbo"
+    video_label: "Talk recording"
+    image: /assets/img/work/ggx.jpg
+    image_alt: "Shader ball with a rough metallic GGX material"
+    keywords: ["importance sampling", "GGX", "visible normal distribution", "microfacet BRDF"]
+
+  - title: "A Practical Method for Automatic Camera Paths Generation in Scientific Visualization Storytelling"
+    authors: "Anis Benyoub, Benoît Ozell"
+    venue: "14th U.S. National Congress on Computational Mechanics (USACM 2017), Montréal"
+    venue_short: "USACM 2017"
+    event: "USACM 2017, Montréal"
+    year: 2017
+    date: "2017-07-17"
+    links:
+      paper: "https://publications.polymtl.ca/39568/"
+    keywords: ["scientific visualization", "camera path generation"]
+
+  - title: "Automatisation de la création de scénarios pour les scènes de la visualisation scientifique"
+    authors: "Anis Benyoub (supervisor: Benoît Ozell)"
+    venue: "M.Sc. thesis, Département de génie informatique et génie logiciel, Polytechnique Montréal"
+    venue_short: "M.Sc. thesis, Polytechnique Montréal"
+    year: 2015
+    date: "2015-11-05"
+    type: thesis
+    links:
+      paper: "https://publications.polymtl.ca/1751/"
+      pdf: "https://publications.polymtl.ca/1751/1/2015_AnisBenyoub.pdf"
+    keywords: ["scientific visualization", "storytelling"]
+
+talks:
+  - title: "Advanced Graphics Summit: Cooperative Vectors and Neural Rendering"
+    speakers: "Shawn Hargreaves (Microsoft), Anis Benyoub (Intel), Joe Rozek (AMD), Alexey Panteleev (NVIDIA)"
+    event: "Game Developers Conference (GDC) 2025, Advanced Graphics Summit organized by Microsoft, San Francisco"
+    event_short: "GDC 2025, Advanced Graphics Summit"
+    year: 2025
+    date: "2025-03-17"
+    note: "Anis presented Intel's segment, \"Cooperative Vectors for Neural Texture Compression\", on hardware-accelerated neural block texture compression."
+    links:
+      video: "https://gdcvault.com/play/1035477/Advanced-Graphics-Summit-Cooperative-Vectors"
+      slides: "https://shawnhargreaves.com/CooperativeVectorsAndNeuralRendering.pdf"
+      code: "https://github.com/GameTechDev/TextureSetNeuralCompressionSample"
+    video_label: "GDC Vault"
+    slides_label: "Slides (Microsoft deck; Intel section not included)"
+
+  - title: "Achieving Scalable Performances for Large Scale Components with CBTs"
+    speakers: "Anis Benyoub, Jonathan Dupuy"
+    event: "SIGGRAPH 2024, Advances in Real-Time Rendering in Games course, Part II, Denver"
+    event_short: "SIGGRAPH 2024 Advances in Real-Time Rendering in Games"
+    year: 2024
+    date: "2024-07-30"
+    links:
+      slides: "https://advances.realtimerendering.com/s2024/content/Intel/large_scale_cbt_slides_siggraph_advances_2024.pdf"
+      course: "https://advances.realtimerendering.com/s2024/index.html"
+      code: "https://github.com/AnisB/large_cbt"
+
+  - title: "Ray Tracing with Unity's High Definition Render Pipeline"
+    speakers: "Pierre Yves Donzallaz, Anis Benyoub"
+    event: "NVIDIA and Unity webinar (online)"
+    event_short: "NVIDIA / Unity webinar"
+    year: 2021
+    date: "2021-01-27"
+    links:
+      video: "https://www.youtube.com/watch?v=ad9f_nKU0ZA"
+      announcement: "https://unity.com/blog/engine-platform/harness-the-ray-tracing-capabilities-of-unitys-hdrp-with-nvidia"
+      qa: "https://developer.nvidia.com/blog/webinar-top-11-questions-from-ray-tracing-with-unitys-high-definition-render-pipeline/"
+    video_label: "Recording"
+
+  - title: "Leveraging Real-Time Ray Tracing to Build a Hybrid Game Engine"
+    speakers: "Anis Benyoub"
+    event: "SIGGRAPH 2019, Advances in Real-Time Rendering in Games course, Part I, Los Angeles"
+    event_short: "SIGGRAPH 2019 Advances in Real-Time Rendering in Games"
+    year: 2019
+    date: "2019-07-29"
+    links:
+      slides: "https://advances.realtimerendering.com/s2019/Benyoub-DXR%20Ray%20tracing-%20SIGGRAPH2019-final.pdf"
+      course: "https://advances.realtimerendering.com/s2019/index.htm"
+
+  - title: "Leveraging Ray Tracing Hardware Acceleration in Unity"
+    speakers: "Anis Benyoub"
+    event: "Digital Dragons 2019, Kraków"
+    event_short: "Digital Dragons 2019"
+    year: 2019
+    date: "2019-05-28"
+    links:
+      video: "https://www.youtube.com/watch?v=wbuvrAdNtmQ"
+      slides: "/assets/pdf/digital-dragons-leveraging-ray-tracing-hardware-acceleration-in-unity.pdf"
+      post: "/2019/05/31/digital-dragons-2019/"
+    video_label: "Recording"
+
+articles:
+  - title: "The new Water System in Unity 2022 LTS and 2023.1"
+    authors: "Adrien de Tocqueville, Rémi Chapelain, Val Grimm, Mathieu Muller, Sebastien Lachambre, Anis Benyoub"
+    venue: "Unity Blog"
+    year: 2023
+    date: "2023-06-28"
+    links:
+      article: "https://unity.com/blog/engine-platform/new-hdrp-water-system-in-2022-lts-and-2023-1"
+  - title: "Experience true Volumetric Clouds with HDRP & Unity 2021.2"
+    authors: "Pierre Yves Donzallaz, Anis Benyoub"
+    venue: "Unity Blog"
+    year: 2021
+    date: "2021-11-05"
+    links:
+      article: "https://web.archive.org/web/20240608044209/https://blog.unity.com/engine-platform/experience-true-volumetric-clouds-with-hdrp-unity-20212"
+    article_label: "Article (archived copy; the original was removed from unity.com)"
+  - title: "Harness the Ray Tracing capabilities of Unity's HDRP with NVIDIA"
+    authors: "Pierre Yves Donzallaz, Anis Benyoub"
+    venue: "Unity Blog"
+    year: 2021
+    date: "2021-01-25"
+    links:
+      article: "https://unity.com/blog/engine-platform/harness-the-ray-tracing-capabilities-of-unitys-hdrp-with-nvidia"
+  - title: "High Definition Render Pipeline real-time ray tracing is now in Preview"
+    authors: "Anis Benyoub"
+    venue: "Unity Blog"
+    year: 2020
+    date: "2020-03-06"
+    links:
+      article: "https://web.archive.org/web/20240226041116/https://blog.unity.com/technology/high-definition-render-pipeline-real-time-ray-tracing-is-now-in-preview"
+    article_label: "Article (archived copy; the original was removed from unity.com)"
+
+software:
+  - title: "Nyx"
+    image: /assets/img/work/nyx-thumb.jpg
+    image_alt: "Robot scanning a parcel, rendered with Nyx"
+    description: "Multi-pipeline renderer for robotics training and simulation, with a path tracer for high-fidelity output, a rasterization pipeline and hybrid rendering. Released as part of Genesis World 1.0 (May 2026). Wrote the first version and carried it to release; now developed by the graphics team I lead at Genesis AI."
+    year: 2026
+    packages:
+      - label: "gs-nyx"
+        url: "https://pypi.org/project/gs-nyx/"
+      - label: "gs-nyx-plugin"
+        url: "https://pypi.org/project/gs-nyx-plugin/"
+    links:
+      code: "https://github.com/Genesis-Embodied-AI/genesis-nyx"
+      genesis: "https://github.com/Genesis-Embodied-AI/genesis-world"
+  - title: "leb3D"
+    image: /assets/img/work/leb3d-sample.jpg
+    image_alt: "Cloud rendered with volumetric path tracing, shown beside the adaptive tetrahedral grid it is traced on"
+    description: "Demo project for the adaptive tetrahedral grid (LEB 3D) structure for volumetric path tracing (SIGGRAPH 2025)."
+    year: 2025
+    links:
+      code: "https://github.com/AnisB/leb3D"
+      video: "https://youtu.be/fn4bfZwLusk"
+  - title: "TextureSetNeuralCompressionSample"
+    image: /assets/img/work/nbtc-sample.jpg
+    image_alt: "T-Rex shown in three stages: block-compressed texture data, the decoded neural feature map, and the final shaded render"
+    description: "Intel sample for hardware-accelerated neural block texture compression with cooperative vectors (HPG 2025, GDC 2025)."
+    year: 2025
+    links:
+      code: "https://github.com/GameTechDev/TextureSetNeuralCompressionSample"
+    materials:
+      - label: "Intel Co-Presents Cooperative Vectors with Microsoft at GDC 2025"
+        url: "https://community.intel.com/t5/Blogs/Tech-Innovation/Artificial-Intelligence-AI/Intel-Co-Presents-Cooperative-Vectors-with-Microsoft-at-Game/post/1674845"
+  - title: "large_cbt"
+    image: /assets/img/work/cbt.jpg
+    image_alt: "Planet-scale ocean tessellated with concurrent binary trees, with a moon on the horizon"
+    description: "Demo project for large-scale game components with concurrent binary trees (HPG 2024, SIGGRAPH 2024)."
+    year: 2024
+    links:
+      code: "https://github.com/AnisB/large_cbt"
+      video: "https://youtu.be/LLMZCL_V4oU"
+  - title: "Unity High Definition Render Pipeline (HDRP)"
+    image: /assets/img/work/hdrp.jpg
+    image_alt: "Ray-traced reflections on a car body, from Unity's real-time ray tracing demo"
+    description: "Unity's high-end render pipeline for PC and consoles. One of the main contributors (2018–2023): real-time ray tracing (reflections, global illumination, shadows, subsurface scattering, recursive rendering, path tracing) and the hybrid raster/ray tracing pipeline, volumetric clouds, water system, screen-space global illumination, fabric and eye shaders, MSAA."
+    year: "2018–2023"
+    links:
+      code: "https://github.com/Unity-Technologies/Graphics"
+      docs: "https://docs.unity3d.com/Packages/com.unity.render-pipelines.high-definition@latest"
+    materials:
+      - label: "Ray tracing"
+        url: "https://docs.unity3d.com/Packages/com.unity.render-pipelines.high-definition@14.0/manual/Ray-Tracing-Getting-Started.html"
+      - label: "Screen space global illumination"
+        url: "https://docs.unity3d.com/Packages/com.unity.render-pipelines.high-definition@14.0/manual/Override-Screen-Space-GI.html"
+      - label: "Fabric shader"
+        url: "https://docs.unity3d.com/Packages/com.unity.render-pipelines.high-definition@17.4/manual/understand-fabrics.html"
+      - label: "Eye shader"
+        url: "https://docs.unity3d.com/Packages/com.unity.render-pipelines.high-definition@17.4/manual/understand-eyes.html"
+      - label: "MSAA"
+        url: "https://docs.unity3d.com/Packages/com.unity.render-pipelines.high-definition@17.4/manual/Anti-Aliasing.html#MSAA"
+      - label: "Volumetric clouds (video)"
+        url: "https://youtu.be/0LTnOaeDbuQ"
+      - label: "Reality vs Illusion ray tracing demo (video)"
+        url: "https://youtu.be/AG7DDXwYpD0"
+      - label: "Time Ghost demo"
+        url: "https://unity.com/demos/time-ghost#special-thanks"
+  - title: "3ds Max, Stingray and Autodesk LIVE"
+    image: /assets/img/work/stingray.jpg
+    image_alt: "Autodesk Stingray logo"
+    description: "Three Autodesk codebases I worked on as a software engineer: 3ds Max, Autodesk LIVE, and the Stingray game engine (formerly Bitsquid, 2016–2017). Computational geometry, data pipelines and rendering algorithms, data compilation systems, procedural content generation, VR features and Android/iOS platform support."
+    year: "2015–2017"
+    links: {}

@@ -1,0 +1,71 @@
+---
+layout: none
+permalink: /llms.txt
+---
+# Anis Benyoub
+
+> Anis Benyoub builds renderers: ray tracing, volumetric clouds and the water system in Unity's HDRP, GPU research at Intel, and Nyx at Genesis AI, where he leads graphics.
+
+Site: {{ site.url }}/
+Email: {{ site.author.email }}
+GitHub: {{ site.github }}
+LinkedIn: {{ site.linkedin }}
+X: {{ site.twitter }}
+Location: Paris, France
+
+## Who I am
+
+At Genesis AI, I wrote the first version of Nyx, the in-house renderer of Genesis World, and carried it through to release. Nyx targets robotics training and simulation and combines several rendering pipelines: a path tracer for high-fidelity output, a rasterization pipeline and hybrid rendering. It shipped with Genesis World 1.0 in May 2026 (https://github.com/Genesis-Embodied-AI/genesis-world) and is available on PyPI as gs-nyx (https://pypi.org/project/gs-nyx/), with the Genesis integration plugin as gs-nyx-plugin (https://pypi.org/project/gs-nyx-plugin/).
+
+Once the initial technology was in place, I built the graphics team around it: engineers, technical artists and artists. I also lead the company's digital twin effort.
+
+From 2023 to 2025, I was a research engineer at Intel GPU Research in Paris, in the Grenoble GraphiX (GGX) research team (https://ggx-research.github.io/). My public work there covered real-time rendering, adaptive geometry, sampling and neural texture compression.
+
+From 2018 to 2023, I was a senior graphics engineer at Unity Technologies and one of the main contributors to the High Definition Render Pipeline (HDRP). Among other features, I built its real-time ray tracing and the hybrid raster/ray tracing pipeline, the volumetric clouds, the water system and screen-space global illumination.
+
+Earlier, I was a graphics engineer at Pretty Simple Games, and a software engineer at Autodesk on 3ds Max, Autodesk LIVE and the Stingray game engine. I hold an M.Sc. in Computer Science from Polytechnique Montréal and an M.Eng. in Computer Science from INSA Lyon.
+
+Areas of expertise: path tracing, real-time rendering, GPU performance, adaptive geometry, neural texture compression, rendering for robotics simulation.
+
+## Career timeline
+
+- July 2025–present: Genesis AI, Paris. Graphics Lead: wrote the first version of Nyx and carried it to release (multi-pipeline renderer for robotics training and simulation: path tracing, rasterization, hybrid rendering; part of Genesis World 1.0, May 2026); then built and leads the graphics team (engineers, technical artists and artists) and the digital twin effort.
+- February 2023–July 2025: Intel Corporation, GPU Research, Paris. Graphics and AI research engineer in the Grenoble GraphiX (GGX) research team, https://ggx-research.github.io/ (real-time rendering, adaptive geometry, sampling, neural texture compression).
+- August 2018–January 2023: Unity Technologies, Paris. Senior graphics engineer, one of the main contributors to the High Definition Render Pipeline (HDRP): real-time ray tracing, hybrid raster/ray tracing pipeline, volumetric clouds, water system, SSGI.
+- August 2017–July 2018: Pretty Simple Games, Paris. Graphics engineer.
+- May 2015–August 2017: Autodesk, Montréal then Paris. Software engineer (3ds Max, Autodesk LIVE, Stingray game engine).
+- Internships: Eugen Systems, Paris (2013); CNRS, Lyon (2012).
+- Education: M.Sc. Computer Science, Polytechnique Montréal (2013–2015); M.Eng. Computer Science, INSA Lyon (2009–2015).
+
+## Publications
+{% for p in site.data.publications.papers %}
+- {{ p.title }}. {{ p.authors }}. {{ p.venue_short }}, {{ p.year }}.{% if p.award %} {{ p.award }}.{% endif %}{% if p.links.paper %} Paper: {{ p.links.paper }}{% endif %}{% if p.links.doi %} DOI: {{ p.links.doi }}{% endif %}{% if p.links.code %} Code: {{ p.links.code }}{% endif %}{% if p.links.video %} Video: {{ p.links.video }}{% endif %}
+{%- endfor %}
+
+## Talks
+{% for t in site.data.publications.talks %}
+- {{ t.title }}. {{ t.speakers }}. {{ t.event }}, {{ t.date | date: "%Y-%m-%d" }}.{% if t.links.slides %} Slides: {{ t.links.slides | absolute_url }}{% endif %}{% if t.links.video %} Video: {{ t.links.video }}{% endif %}
+{%- endfor %}
+
+## Articles
+{% for a in site.data.publications.articles %}
+- {{ a.title }}. {{ a.authors }}. {{ a.venue }}, {{ a.year }}. {{ a.links.article }}
+{%- endfor %}
+
+## Software
+{% for s in site.data.publications.software %}
+- {{ s.title }} ({{ s.year }}): {{ s.description }} {{ s.links.code }}
+{%- endfor %}
+
+## Blog posts
+{% for post in site.posts %}
+- {{ post.date | date: "%Y-%m-%d" }}: {{ post.title }}. {{ post.url | absolute_url }}
+{%- endfor %}
+
+## Pages
+
+- Home: {{ site.url }}/
+- Experience: {{ '/experience/' | absolute_url }}
+- Publications & Talks: {{ '/publications/' | absolute_url }}
+- Blog: {{ '/blog/' | absolute_url }}
+- Sitemap: {{ '/sitemap.xml' | absolute_url }}

@@ -1,0 +1,103 @@
+---
+layout: default
+title: Anis Benyoub
+description: "Anis Benyoub builds renderers: ray tracing, volumetric clouds and the water system in Unity's HDRP, GPU research at Intel, and Nyx at Genesis AI, where he leads graphics. Real-time rendering, path tracing, GPU performance, adaptive geometry, neural texture compression, rendering for robotics simulation."
+permalink: /
+---
+<img class="portrait" src="{{ "/assets/img/anis-benyoub.jpg" | relative_url }}" alt="Anis Benyoub" width="200" height="200">
+<h1>Anis Benyoub</h1>
+<p class="lead">I build renderers. Ray tracing, volumetric clouds and the water system in Unity's HDRP, GPU research at Intel, and now Nyx at Genesis AI, where I lead graphics.</p>
+
+<p>At Genesis AI, I wrote the first version of <a href="https://github.com/Genesis-Embodied-AI/genesis-nyx">Nyx</a>, the in-house renderer of Genesis World, and carried it through to release. Nyx targets robotics training and simulation and combines several rendering pipelines: a path tracer for high-fidelity output, a rasterization pipeline and hybrid rendering. It shipped with <a href="https://github.com/Genesis-Embodied-AI/genesis-world">Genesis World 1.0</a> in May 2026 and is available on PyPI as <a href="https://pypi.org/project/gs-nyx/">gs-nyx</a>, with the Genesis integration plugin as <a href="https://pypi.org/project/gs-nyx-plugin/">gs-nyx-plugin</a>.</p>
+
+<p>Once the initial technology was in place, I built the graphics team around it: engineers, technical artists and artists. I also lead the company's digital twin effort.</p>
+
+<figure class="work">
+  <a href="https://www.youtube.com/watch?v=ggfsGD1PCQA&amp;t=47s"><img src="{{ "/assets/img/work/nyx.jpg" | relative_url }}" alt="Two-arm robot scanning a parcel on a kitchen counter, rendered with Nyx" width="1400" height="788"></a>
+  <figcaption>A scene rendered with Nyx. See the <a href="https://www.youtube.com/watch?v=ggfsGD1PCQA&amp;t=47s">Genesis World 1.0 announcement video</a> for Nyx in motion.</figcaption>
+</figure>
+
+<p>From 2023 to 2025, I was a research engineer at Intel GPU Research in Paris, in the <a href="https://ggx-research.github.io/">Grenoble GraphiX (GGX) research team</a>. My public work there covered real-time rendering, adaptive geometry, sampling and neural texture compression.</p>
+
+<p>From 2018 to 2023, I was a senior graphics engineer at Unity Technologies and one of the main contributors to the High Definition Render Pipeline (HDRP). Among other features, I built its real-time ray tracing and the hybrid raster/ray tracing pipeline, the volumetric clouds, the water system and screen-space global illumination.</p>
+
+<p>Earlier, I was a graphics engineer at Pretty Simple Games, and a software engineer at Autodesk on 3ds Max, Autodesk LIVE and the Stingray game engine. I hold an M.Sc. in Computer Science from Polytechnique Montréal and an M.Eng. in Computer Science from INSA Lyon.</p>
+
+<h2>Links</h2>
+<ul class="plain">
+  <li>Location: Paris, France</li>
+  <li>Email: <a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></li>
+  <li>GitHub: <a href="{{ site.github }}" rel="me">github.com/AnisB</a></li>
+  <li>LinkedIn: <a href="{{ site.linkedin }}" rel="me">linkedin.com/in/anis-benyoub-320b4b44</a></li>
+  <li>X: <a href="{{ site.twitter }}" rel="me">@Auzaiffe</a></li>
+  <li>Publications indexes: <a href="https://dl.acm.org/profile/99661304798">ACM Digital Library</a>, <a href="https://arxiv.org/search/?searchtype=author&query=Benyoub%2C+A">arXiv</a>, <a href="https://www.semanticscholar.org/author/2219690760">Semantic Scholar</a>, <a href="https://history.siggraph.org/person/anis-benyoub">SIGGRAPH History Archives</a></li>
+  <li><a href="{{ '/experience/' | relative_url }}">Experience</a> · <a href="{{ '/publications/' | relative_url }}">Publications &amp; Talks</a> · <a href="{{ '/blog/' | relative_url }}">Blog</a></li>
+</ul>
+
+<h2>Selected publications</h2>
+<ul class="pubs">
+{%- for p in site.data.publications.papers limit: 4 %}
+  <li>{{ p.title }}. {{ p.authors }}. {{ p.venue_short }}{% if p.award %} ({{ p.award }}){% endif %}.
+    <span class="links">{% if p.links.paper %}<a href="{{ p.links.paper }}">Paper</a>{% endif %}{% if p.links.code %}<a href="{{ p.links.code }}">Code</a>{% endif %}{% if p.links.video %}<a href="{{ p.links.video }}">Video</a>{% endif %}</span></li>
+{%- endfor %}
+</ul>
+<p><a href="{{ '/publications/' | relative_url }}">All publications and talks</a></p>
+
+<h2>Recent posts</h2>
+<ul class="posts plain">
+{%- for post in site.posts limit: 5 %}
+  <li><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y-%m-%d" }}</time> <a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
+{%- endfor %}
+</ul>
+<p><a href="{{ '/blog/' | relative_url }}">All posts</a></p>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "@id": "{{ site.url }}/#person",
+  "name": "Anis Benyoub",
+  "givenName": "Anis",
+  "familyName": "Benyoub",
+  "url": "{{ site.url }}/",
+  "image": "{{ "/assets/img/anis-benyoub.jpg" | absolute_url }}",
+  "email": "mailto:{{ site.author.email }}",
+  "jobTitle": "Graphics Lead",
+  "hasOccupation": { "@type": "Occupation", "name": "Graphics Lead", "description": "Wrote the first version of Nyx and carried it to release, a multi-pipeline renderer (path tracing, rasterization, hybrid) for robotics training and simulation; then built and leads the graphics team (engineers, technical artists and artists) and the digital twin effort at Genesis AI. Previously one of the main contributors to Unity's High Definition Render Pipeline (HDRP)." },
+  "description": "Anis Benyoub builds renderers: ray tracing, volumetric clouds and the water system in Unity's HDRP, GPU research at Intel, and Nyx at Genesis AI, where he leads graphics.",
+  "worksFor": {
+    "@type": "Organization",
+    "name": "Genesis AI",
+    "url": "https://www.genesis.ai/"
+  },
+  "memberOf": { "@type": "Organization", "name": "Grenoble GraphiX (GGX) research team, Intel", "url": "https://ggx-research.github.io/" },
+  "alumniOf": [
+    { "@type": "CollegeOrUniversity", "name": "Polytechnique Montréal", "url": "https://www.polymtl.ca/" },
+    { "@type": "CollegeOrUniversity", "name": "INSA Lyon", "url": "https://www.insa-lyon.fr/" },
+    { "@type": "Organization", "name": "Intel Corporation" },
+    { "@type": "Organization", "name": "Unity Technologies" },
+    { "@type": "Organization", "name": "Pretty Simple Games" },
+    { "@type": "Organization", "name": "Autodesk" }
+  ],
+  "knowsAbout": [
+    "path tracing",
+    "real-time rendering",
+    "GPU performance",
+    "adaptive geometry",
+    "neural texture compression",
+    "rendering for robotics simulation",
+    "ray tracing",
+    "computer graphics"
+  ],
+  "homeLocation": { "@type": "Place", "name": "Paris, France" },
+  "sameAs": [
+    "{{ site.github }}",
+    "{{ site.linkedin }}",
+    "{{ site.twitter }}",
+    "https://dl.acm.org/profile/99661304798",
+    "https://www.semanticscholar.org/author/2219690760",
+    "https://history.siggraph.org/person/anis-benyoub",
+    "https://auzaiffe.wordpress.com/"
+  ]
+}
+</script>

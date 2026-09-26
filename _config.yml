@@ -1,0 +1,49 @@
+title: Anis Benyoub
+tagline: "Builds renderers: ray tracing, volumetric clouds and the water system in Unity's HDRP, GPU research at Intel, and Nyx at Genesis AI."
+description: "Anis Benyoub builds renderers: ray tracing, volumetric clouds and the water system in Unity's HDRP, GPU research at Intel, and Nyx at Genesis AI, where he leads graphics."
+url: "https://anisb.github.io"
+baseurl: ""
+author:
+  name: Anis Benyoub
+  email: benyoub.anis@gmail.com
+lang: en
+timezone: UTC
+
+# Profiles
+github: https://github.com/AnisB
+linkedin: https://www.linkedin.com/in/anis-benyoub-320b4b44/
+twitter: https://x.com/Auzaiffe
+# scholar: TODO no Google Scholar profile found; add the URL here if one exists
+
+permalink: /:year/:month/:day/:title/
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+highlighter: rouge
+
+plugins:
+  - jekyll-sitemap
+
+include:
+  - llms.txt
+  - robots.txt
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - node_modules
+  - tools
+  - "*.ps1"
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+  - scope:
+      path: ""
+    values:
+      layout: default

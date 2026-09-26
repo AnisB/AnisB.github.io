@@ -1,0 +1,59 @@
+---
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {%- assign page_title = page.title | default: site.title -%}
+  {%- if page.url == "/" -%}
+    {%- assign full_title = "Anis Benyoub: renderers, real-time ray tracing, GPU research" -%}
+  {%- else -%}
+    {%- assign full_title = page_title | append: ", Anis Benyoub" -%}
+  {%- endif -%}
+  {%- assign desc = page.description | default: page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 300 -%}
+  {%- if page.url != "/" and page.layout == "post" -%}
+    {%- assign desc = "Blog post by Anis Benyoub, who builds renderers at Genesis AI: " | append: desc -%}
+  {%- endif -%}
+  <title>{{ full_title }}</title>
+  <meta name="description" content="{{ desc | escape }}">
+  <meta name="author" content="Anis Benyoub">
+  <link rel="canonical" href="{{ page.url | replace: 'index.html', '' | absolute_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  <meta property="og:type" content="{% if page.layout == 'post' %}article{% else %}profile{% endif %}">
+  <meta property="og:title" content="{{ full_title | escape }}">
+  <meta property="og:description" content="{{ desc | escape }}">
+  <meta property="og:url" content="{{ page.url | absolute_url }}">
+  <meta property="og:site_name" content="Anis Benyoub">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@Auzaiffe">
+  <meta name="twitter:creator" content="@Auzaiffe">
+  {%- if page.math %}
+  <script>
+    MathJax = { tex: { inlineMath: [['$', '$'], ['\\(', '\\)']], displayMath: [['$$', '$$'], ['\\[', '\\]']] } };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  {%- endif %}
+  {%- if page.jsonld %}
+  <script type="application/ld+json">{{ page.jsonld }}</script>
+  {%- endif %}
+</head>
+<body>
+<header>
+  <nav>
+    <a href="{{ '/' | relative_url }}"{% if page.url == "/" %} aria-current="page"{% endif %}>Anis Benyoub</a>
+    <span class="nav-links">
+      <a href="{{ '/experience/' | relative_url }}"{% if page.url == "/experience/" %} aria-current="page"{% endif %}>Experience</a>
+      <a href="{{ '/publications/' | relative_url }}"{% if page.url == "/publications/" %} aria-current="page"{% endif %}>Publications &amp; Talks</a>
+      <a href="{{ '/blog/' | relative_url }}"{% if page.url == "/blog/" or page.layout == "post" %} aria-current="page"{% endif %}>Blog</a>
+    </span>
+  </nav>
+</header>
+<main>
+{{ content }}
+</main>
+<footer>
+  <p>Anis Benyoub · <a href="mailto:{{ site.author.email }}">Email</a> · <a href="{{ site.github }}" rel="me">GitHub</a> · <a href="{{ site.linkedin }}" rel="me">LinkedIn</a> · <a href="{{ site.twitter }}" rel="me">X</a></p>
+</footer>
+</body>
+</html>
